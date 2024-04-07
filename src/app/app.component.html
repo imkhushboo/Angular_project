@@ -1,5 +1,14 @@
-<h1>Counter : </h1>
+<h1 *ngIf="show">hello</h1>
 
-<button (click)="setcount('plus')">+</button>
-<button (click)="setcount('minus')">-</button>
-<p>{{count}}</p>
+<h2 *ngIf="show; then ifblock else elseblock"> hi peeps!</h2>
+
+<ng-template #ifblock>
+   <h1>ifblock</h1>
+</ng-template>
+
+<ng-template #elseblock>
+    <h1>elseblock</h1>
+</ng-template>
+
+
+<h3 *ngIf="cond === 'apple';">yes its a fruit</h3>
