@@ -1,9 +1,9 @@
 <h1>{{title}} </h1>
-<div [ngSwitch]="color">
-    <h1 *ngSwitchCase="'red'" style="color:red"> Color</h1>
-    <h1 *ngSwitchCase="'green'" style="color:green"> Color</h1>
-    <h1 *ngSwitchCase="'blue'" style="color:blue"> Color</h1>
-    <h1 *ngSwitchCase="'yellow'" style="color:yellow"> Color</h1>
-    <h1 *ngSwitchCase="'purple'" style="color:purple"> Color</h1>
-    <h1 *ngSwitchDefault >Default</h1>
+
+<h1 *ngFor="let item of color">{{item}}</h1>
+
+
+<div *ngFor="let user of user_details">
+    <h1>{{user.name}}</h1>
+    <h2>{{user.anime}}</h2>
 </div>
