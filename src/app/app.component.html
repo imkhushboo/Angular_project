@@ -1,14 +1,11 @@
-<h1 *ngIf="show">hello</h1>
+<h1>Multiple condition </h1>
 
-<h2 *ngIf="show; then ifblock else elseblock"> hi peeps!</h2>
-
-<ng-template #ifblock>
-   <h1>ifblock</h1>
+<ng-template [ngIf] = "color === 'green'">
+    <h2 style="color:green">color</h2>
 </ng-template>
-
-<ng-template #elseblock>
-    <h1>elseblock</h1>
+<ng-template [ngIf] = "color === 'red'">
+<h2 style="color:red">color</h2>
 </ng-template>
-
-
-<h3 *ngIf="cond === 'apple';">yes its a fruit</h3>
+<ng-template [ngIf] = "color === 'yellow'">
+<h2 style="color:yellow">color</h2>
+</ng-template>
