@@ -1,11 +1,9 @@
-<h1>Multiple condition </h1>
-
-<ng-template [ngIf] = "color === 'green'">
-    <h2 style="color:green">color</h2>
-</ng-template>
-<ng-template [ngIf] = "color === 'red'">
-<h2 style="color:red">color</h2>
-</ng-template>
-<ng-template [ngIf] = "color === 'yellow'">
-<h2 style="color:yellow">color</h2>
-</ng-template>
+<h1>{{title}} </h1>
+<div [ngSwitch]="color">
+    <h1 *ngSwitchCase="'red'" style="color:red"> Color</h1>
+    <h1 *ngSwitchCase="'green'" style="color:green"> Color</h1>
+    <h1 *ngSwitchCase="'blue'" style="color:blue"> Color</h1>
+    <h1 *ngSwitchCase="'yellow'" style="color:yellow"> Color</h1>
+    <h1 *ngSwitchCase="'purple'" style="color:purple"> Color</h1>
+    <h1 *ngSwitchDefault >Default</h1>
+</div>
