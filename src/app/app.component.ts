@@ -6,13 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = "Style Binding"
-
-  color = "green"
-
-  updateColor(){
-    this.color = "red"
-  }
-
-
+ 
 }

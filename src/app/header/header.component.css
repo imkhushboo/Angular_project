@@ -1,0 +1,18 @@
+.nav{
+    margin-top: 0px;
+    background-color: skyblue;
+    padding: 4px;
+}
+
+.nav ul {
+   
+    list-style-type: none;
+    display: flex;
+    gap: 40px;
+}
+
+.nav ul li{
+    cursor: pointer;
+}
+
+
