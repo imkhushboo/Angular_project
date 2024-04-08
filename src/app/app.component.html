@@ -1,9 +1,5 @@
 <h1>{{title}} </h1>
 
-<div *ngFor="let user of user_details">
-    <h1>{{user.name}}</h1>
-    <div *ngFor = "let anime of user.anime">
-        <h2>{{anime}}</h2>
-        </div>
-    <h3>{{user.phoneno}}</h3>
-</div>
+<h1 [style.color] = "color">Hello people</h1>
+
+<button (click)="updateColor()">update color</button>

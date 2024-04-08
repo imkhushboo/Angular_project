@@ -6,25 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = "Nested For Loop"
+  title = "Style Binding"
 
-  user_details = [
-    {
-      name:"naruto",
-      anime:["yuganda","hiskoa"],
-      phoneno:1234
-    },
-    {
-      name:"shinchan",
-      anime:["shinchanc","shiangami","lilace"],
-      phoneno:1234
-    },
-    {
-      name:"kazama",
-      anime:["shinchan","yosiba","honiri"],
-      phoneno:1234
-    },
-    
-  ]
+  color = "green"
 
+  updateColor(){
+    this.color = "red"
   }
+
+
+}
