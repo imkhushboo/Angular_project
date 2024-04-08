@@ -1,9 +1,9 @@
 <h1>{{title}} </h1>
 
-<h1 *ngFor="let item of color">{{item}}</h1>
-
-
 <div *ngFor="let user of user_details">
     <h1>{{user.name}}</h1>
-    <h2>{{user.anime}}</h2>
+    <div *ngFor = "let anime of user.anime">
+        <h2>{{anime}}</h2>
+        </div>
+    <h3>{{user.phoneno}}</h3>
 </div>

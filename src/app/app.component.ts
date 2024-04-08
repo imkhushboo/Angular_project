@@ -6,22 +6,22 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = "For Loop"
-  color = ["red","purple","yellow","black","brown","green"]
+  title = "Nested For Loop"
+
   user_details = [
     {
       name:"naruto",
-      anime:"yuganda",
+      anime:["yuganda","hiskoa"],
       phoneno:1234
     },
     {
       name:"shinchan",
-      anime:"shinchanc",
+      anime:["shinchanc","shiangami","lilace"],
       phoneno:1234
     },
     {
       name:"kazama",
-      anime:"shinchan",
+      anime:["shinchan","yosiba","honiri"],
       phoneno:1234
     },
     
