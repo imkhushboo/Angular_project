@@ -1,12 +1,9 @@
 <h1>{{title}}</h1>
 
 
-<mat-slide-toggle>Toggle me!</mat-slide-toggle>
-<div class="example-button-row">
-    <button mat-raised-button>Basic</button>
-    <button mat-raised-button color="primary">Primary</button>
-    <button mat-raised-button color="accent">Accent</button>
-    <button mat-raised-button color="warn">Warn</button>
-    <button mat-raised-button disabled>Disabled</button>
-    <a mat-raised-button href="https://www.google.com/" target="_blank">Link</a>
-  </div>
+<input type="text" placeholder="enter your task" #basic/>
+<button (click) = "addTask(basic.value)"> Add task</button>
+
+<ul *ngFor="let item of tasks">
+    <li>{{item.name}} <button (click) = "removeTask(item.id)">Remove</button></li>
+</ul>

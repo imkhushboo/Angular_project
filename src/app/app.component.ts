@@ -8,5 +8,15 @@ import { NgForm } from '@angular/forms';
 })
 export class AppComponent {
  
-  title = "Material-Ui"
+  title = "To-do list"
+ tasks:any= []
+  addTask(value:any)
+  {
+    this.tasks.push({id:this.tasks.length , name : value});
+  }
+
+  removeTask(id:Number)
+  {
+    this.tasks = this.tasks.filter((item:any) => item.id !== id);
+  }
 }
