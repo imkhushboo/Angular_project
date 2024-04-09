@@ -9,10 +9,10 @@ import { NgForm } from '@angular/forms';
 export class AppComponent {
  
   title = "Basic Form"
-  userDetails : any ={}
 
-  getFormDetails(value:NgForm)
-  {
-    this.userDetails = value
+  display = false
+
+  toggle(){
+    this.display = !this.display
   }
 }
