@@ -8,11 +8,5 @@ import { NgForm } from '@angular/forms';
 })
 export class AppComponent {
  
-  title = "Basic Form"
-
-  display = false
-
-  toggle(){
-    this.display = !this.display
-  }
+  title = "Material-Ui"
 }
