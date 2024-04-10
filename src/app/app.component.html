@@ -1,8 +1,3 @@
 <h1>{{title}}</h1>
-
-
-<ul *ngFor = "let item of user_data">
-    <app-user-details [item] = "item"></app-user-details>    
-
-</ul>
-
+<app-user-details (updateEvent)="updatedata($event)"></app-user-details>
+<p>{{data}}</p>

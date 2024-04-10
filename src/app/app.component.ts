@@ -8,16 +8,12 @@ import { NgForm } from '@angular/forms';
 })
 export class AppComponent {
  
-  title = "Reusable component"
+  title = "Data Transfer from Child to Parent "
+  data = "X"
+  updatedata(value : string){
 
-  user_data = [
-    {
-      name : "Khushboo",
-      email:"vkhushboo540@gmail.com"
-    },
-    {
-      name : "Ankit Singh",
-      email: "heelriolog@gmail.com"
-    }
-  ]
+    this.data = value;
+    console.log(this.data);
+
+  }
 }
