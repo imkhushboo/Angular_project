@@ -8,9 +8,9 @@ import { NgForm } from '@angular/forms';
 })
 export class AppComponent {
  
-  title = "Template Ref Variable"
-  getData(name : any)
-  {
-    console.log(name);
+  title = "Template driven form"
+
+  getData(value:any){
+    console.log(value);
   }
 }

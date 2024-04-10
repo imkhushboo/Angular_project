@@ -1,6 +1,7 @@
 <h1>{{title}}</h1>
 
+<form  #loginForm = "ngForm" (ngSubmit)="getData(loginForm.value)">
 
-<input type = "text" #box/>
-
-<button (click)="getData(box.value)">Submit</button>
+    <input type="text" name="name" ngModel/>
+    <input type="email" name="email" ngModel/>
+    <button >Submit</button></form>
