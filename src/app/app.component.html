@@ -1,15 +1,3 @@
 <h1>{{title}}</h1>
 
-<form [formGroup]="loginForm" (ngSubmit) = "loginUser()" >
-
-    <input type="text" name="name" formControlName = "user"/>
-    <span style="color:red" *ngIf="user && user.invalid && user.touched">This field is invalid</span>
-    <br>
-    <br>
-    <input type="email" name="email" formControlName = "email"/>
-    <span style="color:red" *ngIf = "email && email.invalid && email.touched">this is not valid</span>
-    <br>
-    <br>
-    <button [disabled]="loginForm.invalid">Submit</button>
-
-</form>
+<input name="user"  type="text" appRedel placeholder="enter name"/>

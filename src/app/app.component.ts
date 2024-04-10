@@ -8,28 +8,8 @@ import { FormControl, FormGroup ,Validators} from '@angular/forms';
 })
 export class AppComponent {
  
-  title = "Reactive Form"
+  title = "Directive"
 
-  loginForm = new FormGroup({
-    user : new FormControl('',Validators.required),
-    email : new FormControl('',[Validators.required,Validators.email])
-  })
-
-
-  get user(){
-    return this.loginForm.get('user')
-  }
-
-
-  get email()
-  {
-    return this.loginForm.get('email')
-  }
-
-  loginUser()
-  {
-    console.log(this.loginForm.value);
-  }
 
 
 

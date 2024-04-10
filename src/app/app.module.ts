@@ -3,8 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { UserDetailsComponent } from './user-details/user-details.component';
-import { ReactiveFormsModule } from '@angular/forms'; // <-- Import ReactiveFormsModule
+import { ReactiveFormsModule } from '@angular/forms';
+import { RedelDirective } from './redel.directive'; // <-- Import ReactiveFormsModule
 
 
 
@@ -12,7 +12,8 @@ import { ReactiveFormsModule } from '@angular/forms'; // <-- Import ReactiveForm
 @NgModule({
   declarations: [
     AppComponent,
-    UserDetailsComponent,    ],
+    RedelDirective,
+    ],
   imports: [
     BrowserModule,
     AppRoutingModule,
