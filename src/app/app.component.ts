@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NgForm } from '@angular/forms';
+import { FormControl, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
@@ -8,9 +8,19 @@ import { NgForm } from '@angular/forms';
 })
 export class AppComponent {
  
-  title = "Template driven form"
+  title = "Reactive Form"
 
-  getData(value:any){
-    console.log(value);
+  loginForm = new FormGroup({
+    user : new FormControl(''),
+    email : new FormControl('')
+  })
+
+
+  loginUser()
+  {
+    console.log(this.loginForm.value);
   }
+
+
+
 }

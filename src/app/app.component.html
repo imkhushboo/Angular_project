@@ -1,7 +1,9 @@
 <h1>{{title}}</h1>
 
-<form  #loginForm = "ngForm" (ngSubmit)="getData(loginForm.value)">
+<form [formGroup]="loginForm" (ngSubmit) = "loginUser()" >
 
-    <input type="text" name="name" ngModel/>
-    <input type="email" name="email" ngModel/>
-    <button >Submit</button></form>
+    <input type="text" name="name" formControlName = "user"/>
+    <input type="email" name="email" formControlName = "email"/>
+    <button >Submit</button>
+
+</form>
