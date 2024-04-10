@@ -8,15 +8,16 @@ import { NgForm } from '@angular/forms';
 })
 export class AppComponent {
  
-  title = "To-do list"
- tasks:any= []
-  addTask(value:any)
-  {
-    this.tasks.push({id:this.tasks.length , name : value});
-  }
+  title = "Reusable component"
 
-  removeTask(id:Number)
-  {
-    this.tasks = this.tasks.filter((item:any) => item.id !== id);
-  }
+  user_data = [
+    {
+      name : "Khushboo",
+      email:"vkhushboo540@gmail.com"
+    },
+    {
+      name : "Ankit Singh",
+      email: "heelriolog@gmail.com"
+    }
+  ]
 }

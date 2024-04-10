@@ -1,9 +1,8 @@
 <h1>{{title}}</h1>
 
 
-<input type="text" placeholder="enter your task" #basic/>
-<button (click) = "addTask(basic.value)"> Add task</button>
+<ul *ngFor = "let item of user_data">
+    <app-user-details [item] = "item"></app-user-details>    
 
-<ul *ngFor="let item of tasks">
-    <li>{{item.name}} <button (click) = "removeTask(item.id)">Remove</button></li>
 </ul>
+
