@@ -8,12 +8,6 @@ import { NgForm } from '@angular/forms';
 })
 export class AppComponent {
  
-  title = "Data Transfer from Child to Parent "
-  data = "X"
-  updatedata(value : string){
-
-    this.data = value;
-    console.log(this.data);
-
-  }
+  title = " Two way binding"
+  name  = "abc"
 }
