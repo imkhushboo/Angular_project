@@ -8,6 +8,9 @@ import { NgForm } from '@angular/forms';
 })
 export class AppComponent {
  
-  title = " Two way binding"
-  name  = "abc"
+  title = "Template Ref Variable"
+  getData(name : any)
+  {
+    console.log(name);
+  }
 }
