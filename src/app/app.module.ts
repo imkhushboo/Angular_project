@@ -6,7 +6,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ReactiveFormsModule } from '@angular/forms';
 import { UserComponent } from './user/user.component';
 import { HomeComponent } from './home/home.component';
-import { AboutComponent } from './about/about.component'; // <-- Import ReactiveFormsModule
+import { AboutComponent } from './about/about.component';
+import { NoPageComponent } from './no-page/no-page.component'; // <-- Import ReactiveFormsModule
 
 
 
@@ -17,6 +18,7 @@ import { AboutComponent } from './about/about.component'; // <-- Import Reactive
     UserComponent,
     HomeComponent,
     AboutComponent,
+    NoPageComponent,
     ],
   imports: [
     BrowserModule,
