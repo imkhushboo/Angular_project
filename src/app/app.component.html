@@ -1,13 +1,13 @@
 <h1>{{title}}</h1>
 
-<a routerLink="" >Home</a>
-<a routerLink="about" >About</a>
-<a routerLink="user" >User</a>
-<a routerLink="user/20" >Anil</a>
-<a routerLink="user/30" >Suresh</a>
-<a routerLink="user/40" >Bhaskar</a>
+<ul>
+    <li *ngFor = "let user of user">
+{{user.name}}
+    </li>
+</ul>
 
 
-<router-outlet></router-outlet>
+<app-footer />
+
 
 

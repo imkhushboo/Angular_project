@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FormControl, FormGroup ,Validators} from '@angular/forms';
+import { UserdataserviceService } from './services/userdataservice.service';
 
 @Component({
   selector: 'app-root',
@@ -8,7 +8,13 @@ import { FormControl, FormGroup ,Validators} from '@angular/forms';
 })
 export class AppComponent {
  
-  title = "Routing"
+  title = "Services in Angular"
+   user:any
+  constructor(private userdata :UserdataserviceService)
+  {
+    console.log(userdata.users());
+    this.user = userdata.users();
+  }
 
 
 
