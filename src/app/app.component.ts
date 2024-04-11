@@ -8,7 +8,7 @@ import { FormControl, FormGroup ,Validators} from '@angular/forms';
 })
 export class AppComponent {
  
-  title = "Directive"
+  title = "Routing"
 
 
 

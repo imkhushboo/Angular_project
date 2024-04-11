@@ -4,7 +4,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ReactiveFormsModule } from '@angular/forms';
-import { RedelDirective } from './redel.directive'; // <-- Import ReactiveFormsModule
+import { UserComponent } from './user/user.component';
+import { HomeComponent } from './home/home.component';
+import { AboutComponent } from './about/about.component'; // <-- Import ReactiveFormsModule
 
 
 
@@ -12,7 +14,9 @@ import { RedelDirective } from './redel.directive'; // <-- Import ReactiveFormsM
 @NgModule({
   declarations: [
     AppComponent,
-    RedelDirective,
+    UserComponent,
+    HomeComponent,
+    AboutComponent,
     ],
   imports: [
     BrowserModule,
