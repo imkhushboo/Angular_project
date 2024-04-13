@@ -6,18 +6,8 @@ import { DatautilityService } from './datautility.service';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent implements OnInit{
+export class AppComponent{
  
-  title = "API call"
-  products:any = []
-  constructor(private _msgService : DatautilityService){}
-
-  ngOnInit(){
-
-    this._msgService.product().subscribe(productdata => this.products = productdata)
-
-    console.log(this.products);
-
-  }
+  title = "Subject & Behaviour Subject"
 
 }

@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ReactiveFormsModule } from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
+import { ChildcomponentComponent } from './childcomponent/childcomponent.component';
 
 
 
@@ -14,7 +15,8 @@ import {HttpClientModule} from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
-    ],
+    ChildcomponentComponent
+      ],
   imports: [
     BrowserModule,
     AppRoutingModule,

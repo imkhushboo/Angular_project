@@ -1,8 +1,9 @@
 <h1>{{title}}</h1>
 
-<ul>
-    <li *ngFor = "let product of products">
-        <h1>{{product.id}}</h1>
-        <h2>{{product.title}}</h2>
-    </li>
-</ul>
+<div class="grid grid-cols-2">
+
+    <app-childcomponent boxcolor="red"></app-childcomponent>
+    <app-childcomponent boxcolor="green"></app-childcomponent>
+    <app-childcomponent boxcolor="blue"></app-childcomponent>
+    <app-childcomponent boxcolor="yellow"></app-childcomponent>
+</div>
