@@ -1,0 +1,8 @@
+<div class=" mt-4 mx-4 border-1 p-4" [ngClass]="{'bg-red-300':boxcolor === 'red' , 'bg-green-300':boxcolor === 'green'}">
+  <input  class="m-2 border-1 py-2 px-4" type= "text" #inputbox placeholder={{placeholder}}  />
+  <button class="bg-green-500 text-white px-2 py-2 border-1 border-white "  (click)="onCreate(inputbox.value)"> Add user</button>
+
+  <h3 *ngIf="users">Total No. of Users : {{users}}</h3>
+
+
+</div>

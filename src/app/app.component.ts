@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { UserdataserviceService } from './services/userdataservice.service';
 
 @Component({
   selector: 'app-root',
@@ -8,15 +7,30 @@ import { UserdataserviceService } from './services/userdataservice.service';
 })
 export class AppComponent {
  
-  title = "Services in Angular"
-   user:any
-  constructor(private userdata :UserdataserviceService)
+  title = "Exercise in Angular"
+
+  users:any = []
+  admins:any =[]
+
+
+  updateuser(value:string)
   {
-    console.log(userdata.users());
-    this.user = userdata.users();
+    this.users.push(value);
+  }
+
+  updateadmin(value:string)
+  {
+    this.admins.push(value);
+  }
+
+  removeuser(index:number)
+  {
+    this.users.splice(index,1);
   }
 
 
-
-
+  removeadmin(index:number)
+  {
+    this.admins.splice(index,1);
+  }
 }
