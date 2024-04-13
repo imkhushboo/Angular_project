@@ -4,7 +4,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ReactiveFormsModule } from '@angular/forms';
-import { ChildComponent } from './child/child.component';
+import {HttpClientModule} from '@angular/common/http';
+
+
 
 
 
@@ -12,13 +14,13 @@ import { ChildComponent } from './child/child.component';
 @NgModule({
   declarations: [
     AppComponent,
-    ChildComponent,
     ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    ReactiveFormsModule],
+    ReactiveFormsModule,
+    HttpClientModule],
   providers: [],
   bootstrap: [AppComponent]
 })

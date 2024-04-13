@@ -1,39 +1,8 @@
-<h1 class="text-center">{{title}}</h1>
+<h1>{{title}}</h1>
 
-<div class="flex justify-between p-4 border-1 mx-4 my-3">
-
-    <div class="border-1 p-3">
-    <h1> User</h1>
-
-    <ul >
-        <li class="flex gap-1 items-center relative w-[300px] mt-3" *ngFor = "let user of users;index as i">
-            <h3 class="flex my-auto"> User name : {{user}}</h3>
-            <button class="bg-red-400 text-white absolute right-1 border-1 rounded-xl border-white px-2 py-1 " (click)="removeuser(i)">Remove</button>
-
-        </li>
-    </ul>
-    </div>
-    
-    <div class="border-1 p-3">
-    <h1>Admin</h1>
-    <ul >
-        <li class="flex gap-1 items-center relative w-[300px] mt-3" *ngFor = "let admin of admins; index as i ">
-            <h3 class="flex my-auto"> Admin name : {{admin}}</h3>
-            <button class="bg-red-400 text-white absolute right-1 rounded-xl border-1 border-white px-2 py-1" (click) = "removeadmin(i)">Remove</button>
-
-        </li>
-    </ul>
-    
-    </div>
-</div>
-
-<h1 class="text-center"> Child</h1>
-<div class="flex justify-between">
-    
-    <app-child [boxcolor]="'red'"   [placeholder]="'createUser'" (inputEvent)="updateuser($event)" [users] = "users.length"></app-child>
-    <app-child [boxcolor]="'green'" [placeholder]="'createAdmin'" (inputEvent)="updateadmin($event)"></app-child>
-
-</div>
-
-
-
+<ul>
+    <li *ngFor = "let product of products">
+        <h1>{{product.id}}</h1>
+        <h2>{{product.title}}</h2>
+    </li>
+</ul>

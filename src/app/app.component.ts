@@ -1,36 +1,23 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { DatautilityService } from './datautility.service';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+export class AppComponent implements OnInit{
  
-  title = "Exercise in Angular"
+  title = "API call"
+  products:any = []
+  constructor(private _msgService : DatautilityService){}
 
-  users:any = []
-  admins:any =[]
+  ngOnInit(){
 
+    this._msgService.product().subscribe(productdata => this.products = productdata)
 
-  updateuser(value:string)
-  {
-    this.users.push(value);
+    console.log(this.products);
+
   }
 
-  updateadmin(value:string)
-  {
-    this.admins.push(value);
-  }
-
-  removeuser(index:number)
-  {
-    this.users.splice(index,1);
-  }
-
-
-  removeadmin(index:number)
-  {
-    this.admins.splice(index,1);
-  }
 }
