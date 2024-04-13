@@ -1,5 +1,6 @@
-<div  class="border-2 px-4 py-2" [ngClass]="{'bg-red-300' : boxcolor === 'red', 'bg-green-300' : boxcolor === 'green','bg-blue-300' :boxcolor === 'blue','bg-yellow-200':boxcolor === 'yellow'}"> 
-    <h1>UserName : {{user}}</h1>
-   <input type="text" class="rounded-xl px-4 py-2 "  #inputbox/>
-   <button class="bg-gray-300 rounded-xl border-white text-white text-center px-3 py-2" (click) = "updateUser(inputbox.value)">Submit</button>    
+
+
+<div class="h-32 w-90 m-auto border-1" #box>
+    <input type="text" placeholder="enter name"/>
+    <ng-content></ng-content>
 </div>

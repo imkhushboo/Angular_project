@@ -1,9 +1,5 @@
 <h1>{{title}}</h1>
 
-<div class="grid grid-cols-2">
-
-    <app-childcomponent boxcolor="red"></app-childcomponent>
-    <app-childcomponent boxcolor="green"></app-childcomponent>
-    <app-childcomponent boxcolor="blue"></app-childcomponent>
-    <app-childcomponent boxcolor="yellow"></app-childcomponent>
-</div>
+<app-childcomponent>
+    <p #childcomp>this is ng content text</p>
+</app-childcomponent>
