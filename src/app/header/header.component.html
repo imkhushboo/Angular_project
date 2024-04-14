@@ -1,0 +1,26 @@
+<div class="flex gap-2 px-2 py-4 bg-sky-500 text-white text-md justify-between">
+  <ul class="flex gap-2">
+    <li  class= " cursor-pointer" [routerLink]="'home'">Home</li>
+    <li  class= " cursor-pointer" [routerLink]="'about'"> About</li>
+    <li class= " cursor-pointer" [routerLink]="'contact'"> Contact</li>
+    <li class= " cursor-pointer" [routerLink]="'gallery'">Gallery</li>
+  </ul>
+
+  <div *ngIf = "loggedInBlock">
+
+      <button *ngIf = "!loggedInuser">SignIn</button>
+      <div *ngIf = "loggedInuser" class="text-md flex items-center">
+
+          <h3 class="my-auto">Welcome {{username}} | </h3>
+          <button> Log out</button>
+      </div>
+  </div>
+  <div *ngIf="contactdetails">
+      <h3>+91873872871 | vkhush@gmail.com</h3>
+    </div>
+</div>
+
+
+
+
+<router-outlet></router-outlet>

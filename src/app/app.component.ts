@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { DatautilityService } from './datautility.service';
 
 @Component({
   selector: 'app-root',
@@ -8,7 +7,7 @@ import { DatautilityService } from './datautility.service';
 })
 export class AppComponent{
  
-  title = "Subject & Behaviour Subject"
+  title = "Angular Exercise 2"
 
 
 }
